@@ -10,6 +10,7 @@
 
 from input_data import input_data
 
+
 input_data = input_data(2015, 1)
 answer = 0
 
