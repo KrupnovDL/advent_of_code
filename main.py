@@ -4,9 +4,9 @@ def main():
     # import y2015_d1_p1
     # import y2015_d1_p2
     # import y2015_d2_p1
-    import y2015_d2_p2
+    # import y2015_d2_p2
     # import y2015_d3_p1
-    # import y2015_d3_p2
+    import y2015_d3_p2
     # import y2015_d4_p1
     # import y2015_d4_p2
     # import y2015_d5_p1
