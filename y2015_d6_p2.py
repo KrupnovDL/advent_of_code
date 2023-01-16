@@ -31,12 +31,13 @@ for line in input_data:
     x2 = int(line[-2]) + 1
     y1 = int(line[-4])
     y2 = int(line[-1]) + 1
-    if line[1] == "on":
-        grid[x1:x2, y1:y2] += 1
-    elif line[1] == "off":
-        grid[x1:x2, y1:y2] -= 1
-    else:
-        grid[x1:x2, y1:y2] += 2
+    match line[1]:
+        case "on":
+            grid[x1:x2, y1:y2] += 1
+        case "off":
+            grid[x1:x2, y1:y2] -= 1
+        case _:
+            grid[x1:x2, y1:y2] += 2
     grid[x1:x2, y1:y2][grid[x1:x2, y1:y2] < 0] = 0
 
 print(int(np.sum(grid)))
