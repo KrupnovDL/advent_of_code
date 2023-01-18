@@ -12,8 +12,8 @@ def main():
     # import y2015_d5_p1  # https://adventofcode.com/2015/day/5
     # import y2015_d5_p2
     # import y2015_d6_p1  # https://adventofcode.com/2015/day/6
-    import y2015_d6_p2
-    # import y2015_d7_p1  # https://adventofcode.com/2015/day/7
+    # import y2015_d6_p2
+    import y2015_d7_p1  # https://adventofcode.com/2015/day/7
     # import y2015_d7_p2
     # import y2015_d8_p1
     # import y2015_d8_p2
