@@ -32,21 +32,21 @@ for string in input_data:
 cities = tuple(graph.keys())
 longest_distance_overall = float("-inf")
 
-for starting_citi in cities:
+for starting_city in cities:
     cities_to_visit = list(cities)
-    current_citi = starting_citi
-    cities_to_visit.remove(current_citi)
+    current_city = starting_city
+    cities_to_visit.remove(current_city)
     distance = 0
     for i in range(len(cities_to_visit)):
         longest_distance = float("-inf")
-        next_citi = None
-        for citi in cities_to_visit:
-            if graph[current_citi][citi] > longest_distance:
-                longest_distance = graph[current_citi][citi]
-                next_citi = citi
-        distance += graph[current_citi][next_citi]
-        current_citi = next_citi
-        cities_to_visit.remove(current_citi)
+        next_city = None
+        for city in cities_to_visit:
+            if graph[current_city][city] > longest_distance:
+                longest_distance = graph[current_city][city]
+                next_city = city
+        distance += graph[current_city][next_city]
+        current_city = next_city
+        cities_to_visit.remove(current_city)
     if distance > longest_distance_overall:
         longest_distance_overall = distance
 
